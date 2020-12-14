@@ -1,10 +1,153 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><!-- 约束声明-->
+<html lang="en"> <!-- html的开始 -->
 <head>
     <meta charset="UTF-8">
-    <title>钟篱无敌</title>
+    <title>无敌</title>
 </head>
+<body bgcolor="red"> ddd</body><!-- 颜色属性-->
+<body onclick="alert()"> </body>><!-- 事件属性 -->
 <body>
-    钟篱加油
+<button onclick="alert('牛逼')">按键</button><!-- 事件属性 -->
+    加油<br/>
+<hr/>
+
+<!--01 字体标签 -->
+<!--font 是字体标签 color修改颜色 face修改字体 size修改大小-->
+<font color="blue" face = "黑体" size = "2">标签</font>
+
+<!--02 特殊字符 -->
+<!--   < &lt;
+       > &gt;
+       空格 &nbsp;
+ -->
+我是&lt;br&gt;
+你好&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我无敌
+
+<!--03 标题标签
+    h1 ~ h6
+    h1 最大
+    h6 最小
+
+    属性:align 对齐 left center right
+
+-->
+<h1 align="center">标题1</h1>
+<h2 align="right">标题2</h2>
+<h3 align="left">标题3</h3>
+<h4>标题4</h4>
+<h5>标题5</h5>
+<h6>标题6</h6>
+
+<!--04 超链接
+    a标签是超链接
+    属性href是连接地址
+    属性target设置哪个目标进行跳转
+       _self 表示当前页面
+       _blank 新页面跳转
+-->
+<a href="http://www.baidu.com" target="_blank">百度</a>
+<a href="http://www.baidu.com" target="_self">百度_self</a>
+
+
+<!--05 列表标签
+    无序列表 ul
+    属性type修改列表项前的符号
+    有序列表 ol
+    li 是列表项
+-->
+    <ul>
+        <li>张三</li>
+        <li>李四</li>
+    </ul>
+    <ul type="none">
+        <li>张三</li>
+        <li>李四</li>
+    </ul>
+    <ol>
+        <li>张三</li>
+        <li>李四</li>
+    </ol>
+
+<!--06 img标签
+    src属性设置图片路径
+    width属性设置宽度
+    height属性设置高度
+    border属性设置边框
+    alt属性设置图片找不到的异常
+
+    web分为相对和绝对路径
+    相对路径
+         . 当前文件目录
+         .. 当前文件上一级目录
+         文件名 当前文件所在目录的文件,./文件名   ./可以省略
+     绝对路径
+        正确格式: http://ip:port/工程名/资源路径
+
+-->
+<img src ="./imgs/1.png" width="200" height="100" alt="图像找不到"/>
+<img src ="./imgs/1.png"/>
+
+<!--07 表格
+    table: 表格标签
+        cellspacing 单元格间接
+    tr: 行标签
+    th: 表头标签
+    td: 单元格标签
+    b: 加粗标签
+
+-->
+
+    <table align="center" border="1" width="300" height="300" cellspacing="0">
+        <tr>
+            <td><b>1</b></td>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+        </tr>
+    </table>
+
+<!--08 跨行跨列表格
+    属性colspan：跨列
+    属性rowspan：跨行
+-->
+<table border="1" width="300" height="300" cellspacing="0">
+    <tr>
+        <th colspan="2">1</th>
+        <th>3</th>
+    </tr>
+    <tr>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+    </tr>
+    <tr>
+        <th rowspan="2">1</th>
+        <th>2</th>
+        <th>3</th>
+    </tr>
+    <tr>
+        <th>5</th>
+        <th>6</th>
+    </tr>
+</table>
+
+<!--09 单独页面显示 iframe
+    iframe开辟小区域显示单独页面
+        iframe与a标签组合使用的步骤
+            1）iframe使用name定义名称
+            2）a标签的target属性设置iframe的name属性
+-->
+    <iframe src="table.html" width="500" height="300" name = "abc"></iframe>
+        <br/>
+    <ul>
+        <li><a href = "test1.html" target="abc">test1</a></li>
+    </ul>
+
+
+
 </body>
 </html>
