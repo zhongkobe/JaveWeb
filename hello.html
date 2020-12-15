@@ -147,7 +147,128 @@
         <li><a href = "test1.html" target="abc">test1</a></li>
     </ul>
 
+<!--10 表单
+    form 表单标签
+            action 属性设置提交的服务器地址
+            method属性设置提交的方式GET(默认值)或POST
+    input type = text 文本输入框
+
+    表单提交,没有发送给服务器的三种情况
+    1)name属性
+    2)radio checkbox的value设置待发送的值
+    3)表单项不在form标签里面
+
+    GET请求特点:
+    1)浏览器地址栏地址:action属性[+?+请求参数]
+        name=value&name=value
+    2)不安全
+    3)数据长度限制
+
+    数据太长用post
+    POST请求特点:
+    1)浏览器只有action属性值
+    2)安全
+    3)没有长度限制
+
+-->
+    <form action="192.168.1.20" method="post">
+        <input type="hidden"  name="action" value="login"/>
+        <h1 align="center">用户注册</h1>
+        <table align="center">
+            <tr>
+                <td>
+                    用户名称:
+                </td>
+                <td>
+                    <input type="text" value="默认值" name="user"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    用户密码:
+                </td>
+                <td>
+                    <input type="password" name="password" value="abc"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    确认密码:
+                </td>
+                <td>
+                    <input type="password" value="abc"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    性别:
+                </td>
+                <td>
+                    <input type="radio" name = "sex" checked = "checked" value="boy"/>男
+                    <input type="radio" name = "sex" value="girl"/>女
+                </td>
+            </tr>
 
 
+            <tr>
+                <td>
+                    兴趣爱好:
+                </td>
+                <td>
+                    <input  type = "checkbox" checked = "checked" name="hobby" value="java"/>Java
+                    <input  type = "checkbox" name="hobby" value="c++"/>C++
+                    <input  type = "checkbox" name="hobby" value="python"/>python
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <td>
+                    国籍:
+                </td>
+                <td>
+                    <select name="国籍">
+                        <option>---国籍选择---</option>
+                        <option selected = "selected">中国</option>
+                        <option >美国</option>
+                        <option>俄罗斯</option>
+                        <option>俄罗斯</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    自我评价:
+                </td>
+                <td>
+                    <textarea rows = "10" cols="20" name="评价">我是默认值</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type = "reset" value="重置"/>
+                </td>
+                <td>
+                    <input type = "submit" value="提交" align="right"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+<!--11 其它标签
+    div默认独占一行
+    span 封装数据的长度
+    p段落标签 默认会在段落上方或下方各空出一行(如果已有就不空)
+-->
+<div>123</div>
+<span>span1</span>
+
+<span>sp2</span>
+
+<p>p1</p>
+<p>p2</p>1
 </body>
 </html>
